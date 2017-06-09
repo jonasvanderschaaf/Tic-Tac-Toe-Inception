@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tic Tac Toe Inception</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="jquery.js"></script>
+<script src="game.js"></script>
+
+</head>
+
+<body>
+
+<!board>
+<table id="wholeboard">
+	
+	<tr>
+		
+		<td class="bigfield">
+			
+			<table>
+				
+				<tr>
+					
+					<td id="0-0-0-0" class="smallfield"></td>
+					<td id="0-0-1-0" class="smallfield"></td>
+					<td id="0-0-2-0" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="0-0-0-1" class="smallfield"></td>
+					<td id="0-0-1-1" class="smallfield"></td>
+					<td id="0-0-2-1" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="0-0-0-2" class="smallfield"></td>
+					<td id="0-0-1-2" class="smallfield"></td>
+					<td id="0-0-2-2" class="smallfield"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</td>
+		
+		<td class="bigfield">
+			
+			<table>
+				
+				<tr>
+					
+					<td id="1-0-0-0" class="smallfield"></td>
+					<td id="1-0-1-0" class="smallfield"></td>
+					<td id="1-0-2-0" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="1-0-0-1" class="smallfield"></td>
+					<td id="1-0-1-1" class="smallfield"></td>
+					<td id="1-0-2-1" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="1-0-0-2" class="smallfield"></td>
+					<td id="1-0-1-2" class="smallfield"></td>
+					<td id="1-0-2-2" class="smallfield"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</td>
+		
+		<td class="bigfield">
+			
+			<table>
+				
+				<tr>
+					
+					<td id="2-0-0-0" class="smallfield"></td>
+					<td id="2-0-1-0" class="smallfield"></td>
+					<td id="2-0-2-0" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="2-0-0-1" class="smallfield"></td>
+					<td id="2-0-1-1" class="smallfield"></td>
+					<td id="2-0-2-1" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="2-0-0-2" class="smallfield"></td>
+					<td id="2-0-1-2" class="smallfield"></td>
+					<td id="2-0-2-2" class="smallfield"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</td>
+		
+	</tr>
+	
+	<tr>
+		
+		<td class="bigfield">
+			
+			<table>
+				
+				<tr>
+					
+					<td id="0-1-0-0" class="smallfield"></td>
+					<td id="0-1-1-0" class="smallfield"></td>
+					<td id="0-1-2-0" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="0-1-0-1" class="smallfield"></td>
+					<td id="0-1-1-1" class="smallfield"></td>
+					<td id="0-1-2-1" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="0-1-0-2" class="smallfield"></td>
+					<td id="0-1-1-2" class="smallfield"></td>
+					<td id="0-1-2-2" class="smallfield"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</td>
+		
+		<td class="bigfield">
+			
+			<table>
+				
+				<tr>
+					
+					<td id="1-1-0-0" class="smallfield"></td>
+					<td id="1-1-1-0" class="smallfield"></td>
+					<td id="1-1-2-0" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="1-1-0-1" class="smallfield"></td>
+					<td id="1-1-1-1" class="smallfield"></td>
+					<td id="1-1-2-1" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="1-1-0-2" class="smallfield"></td>
+					<td id="1-1-1-2" class="smallfield"></td>
+					<td id="1-1-2-2" class="smallfield"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</td>
+		
+		<td class="bigfield">
+			
+			<table>
+				
+				<tr>
+					
+					<td id="2-1-0-0" class="smallfield"></td>
+					<td id="2-1-1-0" class="smallfield"></td>
+					<td id="2-1-2-0" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="2-1-0-1" class="smallfield"></td>
+					<td id="2-1-1-1" class="smallfield"></td>
+					<td id="2-1-2-1" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="2-1-0-2" class="smallfield"></td>
+					<td id="2-1-1-2" class="smallfield"></td>
+					<td id="2-1-2-2" class="smallfield"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</td>
+		
+	</tr>
+	
+	<tr>
+		
+		<td class="bigfield">
+			
+			<table>
+				
+				<tr>
+					
+					<td id="0-2-0-0" class="smallfield"></td>
+					<td id="0-2-1-0" class="smallfield"></td>
+					<td id="0-2-2-0" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="0-2-0-1" class="smallfield"></td>
+					<td id="0-2-1-1" class="smallfield"></td>
+					<td id="0-2-2-1" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="0-2-0-2" class="smallfield"></td>
+					<td id="0-2-1-2" class="smallfield"></td>
+					<td id="0-2-2-2" class="smallfield"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</td>
+		
+		<td class="bigfield">
+			
+			<table>
+				
+				<tr>
+					
+					<td id="1-2-0-0" class="smallfield"></td>
+					<td id="1-2-1-0" class="smallfield"></td>
+					<td id="1-2-2-0" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="1-2-0-1" class="smallfield"></td>
+					<td id="1-2-1-1" class="smallfield"></td>
+					<td id="1-2-2-1" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="1-2-0-2" class="smallfield"></td>
+					<td id="1-2-1-2" class="smallfield"></td>
+					<td id="1-2-2-2" class="smallfield"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</td>
+		
+		<td class="bigfield">
+			
+			<table>
+				
+				<tr>
+					
+					<td id="2-2-0-0" class="smallfield"></td>
+					<td id="2-2-1-0" class="smallfield"></td>
+					<td id="2-2-2-0" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="2-2-0-1" class="smallfield"></td>
+					<td id="2-2-1-1" class="smallfield"></td>
+					<td id="2-2-2-1" class="smallfield"></td>
+					
+				</tr>
+				<tr>
+					
+					<td id="2-2-0-2" class="smallfield"></td>
+					<td id="2-2-1-2" class="smallfield"></td>
+					<td id="2-2-2-2" class="smallfield"></td>
+					
+				</tr>
+				
+			</table>
+			
+		</td>
+		
+	</tr>
+	
+</table>
+
+</body>
+</html>
